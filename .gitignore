@@ -1,3 +1,11 @@
+<<<<<<< HEAD
 Debug/
 audio/
 graphics/
+=======
+.cproject
+.project
+.settings/
+Debug/
+content/
+>>>>>>> bb9b0b1426988892ba19d8c7a37f64b5059545a2
