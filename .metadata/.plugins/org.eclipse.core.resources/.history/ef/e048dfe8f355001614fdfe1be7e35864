@@ -1,0 +1,20 @@
+#ifndef PADDLE_H_
+#define PADDLE_H_
+
+#include <string>
+#include <SDL/SDL.h>
+
+class Graphics;
+
+class Paddle {
+public:
+	Paddle(
+			const std::string& file_path,
+			int source_x, int source_y,
+			int width, int height);
+	virtual ~Paddle();
+	void update(int elapsed_time_ms);
+	void draw(Graphics& graphics, int x, int y);
+};
+
+#endif /* PADDLE_H_ */

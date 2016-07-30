@@ -1,0 +1,15 @@
+19:52:12 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+
+19:52:12 Build Finished (took 311ms)
+

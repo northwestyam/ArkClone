@@ -1,0 +1,17 @@
+/*
+ * graphics.cpp
+ *
+ *  Created on: Jul 29, 2016
+ *      Author: johjoh
+ */
+
+#include "graphics.h"
+
+Graphics::Graphics() {
+
+}
+
+Graphics::~Graphics() {
+
+}
+

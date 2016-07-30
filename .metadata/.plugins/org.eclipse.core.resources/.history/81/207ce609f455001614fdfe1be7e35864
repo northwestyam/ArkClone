@@ -1,0 +1,11 @@
+#include "paddle.h"
+#include "graphics.h"
+
+Paddle::Paddle() {
+
+}
+
+Paddle::~Paddle() {
+
+}
+

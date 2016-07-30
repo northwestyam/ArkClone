@@ -1,0 +1,10 @@
+#ifndef ARKCLONE_H_
+#define ARKCLONE_H_
+
+class Arkclone {
+public:
+	Arkclone();
+	~Arkclone();
+};
+
+#endif /* ARKCLONE_H_ */

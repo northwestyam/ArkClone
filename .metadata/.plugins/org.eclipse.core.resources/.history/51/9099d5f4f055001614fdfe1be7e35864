@@ -1,0 +1,18 @@
+/*
+ * graphics.cpp
+ *
+ *  Created on: Jul 29, 2016
+ *      Author: johjoh
+ */
+
+#include "graphics.h"
+
+graphics::graphics() {
+	// TODO Auto-generated constructor stub
+
+}
+
+graphics::~graphics() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,13 @@
+#ifndef INPUT_H_
+#define INPUT_H_
+
+#include <SDL/SDL.h>
+#include <map>
+
+class input {
+public:
+	input();
+	virtual ~input();
+};
+
+#endif /* INPUT_H_ */

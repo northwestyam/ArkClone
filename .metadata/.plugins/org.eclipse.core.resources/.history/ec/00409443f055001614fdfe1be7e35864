@@ -1,0 +1,6 @@
+#include "arkclone.h"
+
+int main(int argc, char* argv[]) {
+	ArkClone ark;
+	return 0;
+}

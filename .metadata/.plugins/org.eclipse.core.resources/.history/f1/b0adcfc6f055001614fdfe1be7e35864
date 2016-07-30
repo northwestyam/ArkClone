@@ -1,0 +1,14 @@
+#ifndef ARKCLONE_H_
+#define ARKCLONE_H_
+
+class Arkclone {
+public:
+	Arkclone();
+	~Arkclone();
+
+private:
+	void eventLoop();
+	void update(int elapsed_time_ms);
+};
+
+#endif /* ARKCLONE_H_ */

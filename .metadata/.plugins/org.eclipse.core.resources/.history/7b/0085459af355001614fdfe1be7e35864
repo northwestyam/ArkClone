@@ -1,0 +1,10 @@
+#ifndef PADDLE_H_
+#define PADDLE_H_
+
+class paddle {
+public:
+	paddle();
+	virtual ~paddle();
+};
+
+#endif /* PADDLE_H_ */

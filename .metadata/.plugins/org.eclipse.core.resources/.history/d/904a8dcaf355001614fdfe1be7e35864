@@ -1,0 +1,15 @@
+#ifndef PADDLE_H_
+#define PADDLE_H_
+
+#include <string>
+#include <SDL/SDL.h>
+
+class Graphics;
+
+class Paddle {
+public:
+	Paddle();
+	virtual ~Paddle();
+};
+
+#endif /* PADDLE_H_ */

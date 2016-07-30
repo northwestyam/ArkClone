@@ -1,0 +1,16 @@
+#include "graphics.h"
+
+namespace {
+	const int kScreenWidth = 640;
+	const int kScreenHeight = 480;
+	const in kBitsPerPixel = 32;
+}
+
+Graphics::Graphics() {
+
+}
+
+Graphics::~Graphics() {
+
+}
+

@@ -1,0 +1,1326 @@
+17:59:21 **** Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./main.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+18:04:49 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"graphics.d" -MT"graphics.d" -o "graphics.o" "../graphics.cpp"
+Finished building: ../graphics.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./main.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+18:07:52 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../graphics.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"graphics.d" -MT"graphics.d" -o "graphics.o" "../graphics.cpp"
+Finished building: ../graphics.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./main.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+18:23:13 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In constructor ‘Arkclone::Arkclone()’:
+../arkclone.cpp:8:11: error: ‘SDL_INIT_EVERYTHING’ was not declared in this scope
+  SDL_Init(SDL_INIT_EVERYTHING);
+           ^
+../arkclone.cpp:8:30: error: ‘SDL_Init’ was not declared in this scope
+  SDL_Init(SDL_INIT_EVERYTHING);
+                              ^
+../arkclone.cpp:9:17: error: ‘SDL_DISABLE’ was not declared in this scope
+  SDL_ShowCursor(SDL_DISABLE);
+                 ^
+../arkclone.cpp:9:28: error: ‘SDL_ShowCursor’ was not declared in this scope
+  SDL_ShowCursor(SDL_DISABLE);
+                            ^
+../arkclone.cpp: In destructor ‘Arkclone::~Arkclone()’:
+../arkclone.cpp:14:11: error: ‘SDL_Quit’ was not declared in this scope
+  SDL_Quit();
+           ^
+make: *** [arkclone.o] Error 1
+18:24:51 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:20:11: error: aggregate ‘Graphics graphics’ has incomplete type and cannot be defined
+  Graphics graphics;
+           ^
+../arkclone.cpp:21:12: warning: unused variable ‘event’ [-Wunused-variable]
+  SDL_Event event;
+            ^
+make: *** [arkclone.o] Error 1
+18:25:01 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:21:12: warning: unused variable ‘event’ [-Wunused-variable]
+  SDL_Event event;
+            ^
+Finished building: ../arkclone.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building file: ../paddle.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"paddle.d" -MT"paddle.d" -o "paddle.o" "../paddle.cpp"
+../paddle.cpp:7:24: error: declaration of ‘Paddle::Paddle(const string&, int, int, int, int)’ outside of class is not definition [-fpermissive]
+   int width, int height);
+                        ^
+../paddle.cpp:8:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+make: *** [paddle.o] Error 1
+18:25:37 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:22:2: error: ‘Paddle’ was not declared in this scope
+  Paddle paddle;
+  ^
+../arkclone.cpp:22:9: error: expected ‘;’ before ‘paddle’
+  Paddle paddle;
+         ^
+../arkclone.cpp:21:12: warning: unused variable ‘event’ [-Wunused-variable]
+  SDL_Event event;
+            ^
+make: *** [arkclone.o] Error 1
+18:25:38 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:22:2: error: ‘Paddle’ was not declared in this scope
+  Paddle paddle;
+  ^
+../arkclone.cpp:22:9: error: expected ‘;’ before ‘paddle’
+  Paddle paddle;
+         ^
+../arkclone.cpp:21:12: warning: unused variable ‘event’ [-Wunused-variable]
+  SDL_Event event;
+            ^
+make: *** [arkclone.o] Error 1
+18:27:15 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:22:2: error: ‘Paddle’ was not declared in this scope
+  Paddle paddle;
+  ^
+../arkclone.cpp:22:9: error: expected ‘;’ before ‘paddle’
+  Paddle paddle;
+         ^
+../arkclone.cpp:21:12: warning: unused variable ‘event’ [-Wunused-variable]
+  SDL_Event event;
+            ^
+make: *** [arkclone.o] Error 1
+18:29:51 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:22:2: error: ‘Paddle’ was not declared in this scope
+  Paddle paddle;
+  ^
+../arkclone.cpp:22:9: error: expected ‘;’ before ‘paddle’
+  Paddle paddle;
+         ^
+../arkclone.cpp:21:12: warning: unused variable ‘event’ [-Wunused-variable]
+  SDL_Event event;
+            ^
+make: *** [arkclone.o] Error 1
+18:31:40 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:23:9: error: no matching function for call to ‘Paddle::Paddle()’
+  Paddle paddle;
+         ^
+../arkclone.cpp:23:9: note: candidates are:
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:11:2: note: Paddle::Paddle(const string&, int, int, int, int)
+  Paddle(
+  ^
+../paddle.h:11:2: note:   candidate expects 5 arguments, 0 provided
+../paddle.h:9:7: note: Paddle::Paddle(const Paddle&)
+ class Paddle {
+       ^
+../paddle.h:9:7: note:   candidate expects 1 argument, 0 provided
+../arkclone.cpp:22:12: warning: unused variable ‘event’ [-Wunused-variable]
+  SDL_Event event;
+            ^
+make: *** [arkclone.o] Error 1
+18:34:14 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:23:9: error: no matching function for call to ‘Paddle::Paddle()’
+  Paddle paddle;
+         ^
+../arkclone.cpp:23:9: note: candidates are:
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:11:2: note: Paddle::Paddle(const string&, int, int, int, int)
+  Paddle(
+  ^
+../paddle.h:11:2: note:   candidate expects 5 arguments, 0 provided
+../paddle.h:9:7: note: Paddle::Paddle(const Paddle&)
+ class Paddle {
+       ^
+../paddle.h:9:7: note:   candidate expects 1 argument, 0 provided
+../arkclone.cpp:22:12: warning: unused variable ‘event’ [-Wunused-variable]
+  SDL_Event event;
+            ^
+make: *** [arkclone.o] Error 1
+18:35:37 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:22:12: warning: unused variable ‘event’ [-Wunused-variable]
+  SDL_Event event;
+            ^
+Finished building: ../arkclone.cpp
+ 
+Building file: ../paddle.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"paddle.d" -MT"paddle.d" -o "paddle.o" "../paddle.cpp"
+../paddle.cpp:7:24: error: declaration of ‘Paddle::Paddle(const string&, int, int, int, int)’ outside of class is not definition [-fpermissive]
+   int width, int height);
+                        ^
+../paddle.cpp:8:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+make: *** [paddle.o] Error 1
+18:36:02 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../paddle.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"paddle.d" -MT"paddle.d" -o "paddle.o" "../paddle.cpp"
+In file included from /usr/include/SDL/SDL_mouse.h:32:0,
+                 from /usr/include/SDL/SDL_events.h:35,
+                 from /usr/include/SDL/SDL.h:37,
+                 from ../paddle.h:5,
+                 from ../paddle.cpp:1:
+../paddle.cpp: In constructor ‘Paddle::Paddle(const string&, int, int, int, int)’:
+../paddle.cpp:9:17: error: cannot convert ‘std::basic_string<_CharT, _Traits, _Alloc>::c_str<char, std::char_traits<char>, std::allocator<char> >’ from type ‘const char* (std::basic_string<char>::)()const’ to type ‘const char*’
+  sprite_sheet = SDL_LoadBMP(file_path.c_str));
+                 ^
+../paddle.cpp:9:45: error: expected ‘;’ before ‘)’ token
+  sprite_sheet = SDL_LoadBMP(file_path.c_str));
+                                             ^
+make: *** [paddle.o] Error 1
+18:36:12 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../paddle.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"paddle.d" -MT"paddle.d" -o "paddle.o" "../paddle.cpp"
+In file included from /usr/include/SDL/SDL_mouse.h:32:0,
+                 from /usr/include/SDL/SDL_events.h:35,
+                 from /usr/include/SDL/SDL.h:37,
+                 from ../paddle.h:5,
+                 from ../paddle.cpp:1:
+../paddle.cpp: In constructor ‘Paddle::Paddle(const string&, int, int, int, int)’:
+../paddle.cpp:9:17: error: cannot convert ‘std::basic_string<_CharT, _Traits, _Alloc>::c_str<char, std::char_traits<char>, std::allocator<char> >’ from type ‘const char* (std::basic_string<char>::)()const’ to type ‘const char*’
+  sprite_sheet = SDL_LoadBMP(file_path.c_str);
+                 ^
+make: *** [paddle.o] Error 1
+18:36:41 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../paddle.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"paddle.d" -MT"paddle.d" -o "paddle.o" "../paddle.cpp"
+Finished building: ../paddle.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+18:36:44 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+18:46:13 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:23:2: error: ‘Input’ was not declared in this scope
+  Input input;
+  ^
+../arkclone.cpp:23:8: error: expected ‘;’ before ‘input’
+  Input input;
+        ^
+../arkclone.cpp:34:11: error: expected unqualified-id before ‘.’ token
+      input.keyDownEvent(event);
+           ^
+../arkclone.cpp:37:11: error: expected unqualified-id before ‘.’ token
+      input.keyUpEvent(event);
+           ^
+../arkclone.cpp:43:12: error: expected primary-expression before ‘.’ token
+   if (input.wasKeyPressed(SDLK_ESCAPE)) {
+            ^
+../arkclone.cpp:46:12: error: expected primary-expression before ‘.’ token
+   if (input.isKeyHeld(SDLK_LEFT) && input.isKeyHeld(SDLK_RIGHT)) {
+            ^
+../arkclone.cpp:46:42: error: expected primary-expression before ‘.’ token
+   if (input.isKeyHeld(SDLK_LEFT) && input.isKeyHeld(SDLK_RIGHT)) {
+                                          ^
+../arkclone.cpp:47:4: error: ‘paddle_’ was not declared in this scope
+    paddle_->stopMoving();
+    ^
+../arkclone.cpp:48:19: error: expected primary-expression before ‘.’ token
+   } else if (input.isKeyHeld(SDLK_LEFT)) {
+                   ^
+../arkclone.cpp:49:4: error: ‘paddle_’ was not declared in this scope
+    paddle_->startMovingLeft();
+    ^
+../arkclone.cpp:50:19: error: expected primary-expression before ‘.’ token
+   } else if (input.isKeyHeld(SDLK_RIGHT)) {
+                   ^
+../arkclone.cpp:51:4: error: ‘paddle_’ was not declared in this scope
+    paddle_->startMovingRight();
+    ^
+../arkclone.cpp:53:4: error: ‘paddle_’ was not declared in this scope
+    paddle_->stopMoving();
+    ^
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:69:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->update(elapsed_time);
+  ^
+../arkclone.cpp:69:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:74:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->draw(graphics);
+  ^
+make: *** [arkclone.o] Error 1
+18:49:02 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:47:4: error: ‘paddle_’ was not declared in this scope
+    paddle_->stopMoving();
+    ^
+../arkclone.cpp:49:4: error: ‘paddle_’ was not declared in this scope
+    paddle_->startMovingLeft();
+    ^
+../arkclone.cpp:51:4: error: ‘paddle_’ was not declared in this scope
+    paddle_->startMovingRight();
+    ^
+../arkclone.cpp:53:4: error: ‘paddle_’ was not declared in this scope
+    paddle_->stopMoving();
+    ^
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:69:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->update(elapsed_time);
+  ^
+../arkclone.cpp:69:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:74:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->draw(graphics);
+  ^
+make: *** [arkclone.o] Error 1
+18:51:09 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+In file included from ../arkclone.cpp:1:0:
+../arkclone.h:17:9: error: field ‘paddle_’ has incomplete type
+  Paddle paddle_;
+         ^
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:25:2: error: ‘paddle_’ was not declared in this scope
+  paddle_ = new Paddle("graphics/player.bmp",0,0,102,22);
+  ^
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:69:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->update(elapsed_time);
+  ^
+../arkclone.cpp:69:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:74:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->draw(graphics);
+  ^
+make: *** [arkclone.o] Error 1
+18:51:47 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:26:62: error: conversion from ‘Paddle*’ to non-scalar type ‘Paddle’ requested
+  Paddle paddle_ = new Paddle("graphics/player.bmp",0,0,102,22);
+                                                              ^
+../arkclone.cpp:48:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->stopMoving();
+           ^
+../arkclone.cpp:50:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->startMovingLeft();
+           ^
+../arkclone.cpp:52:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->startMovingRight();
+           ^
+../arkclone.cpp:54:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->stopMoving();
+           ^
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:70:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->update(elapsed_time);
+  ^
+../arkclone.cpp:70:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:75:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->draw(graphics);
+  ^
+make: *** [arkclone.o] Error 1
+18:52:16 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:26:62: error: conversion from ‘Paddle*’ to non-scalar type ‘Paddle’ requested
+  Paddle paddle_ = new Paddle("graphics/player.bmp",0,0,102,22);
+                                                              ^
+../arkclone.cpp:48:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->stopMoving();
+           ^
+../arkclone.cpp:50:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->startMovingLeft();
+           ^
+../arkclone.cpp:52:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->startMovingRight();
+           ^
+../arkclone.cpp:54:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->stopMoving();
+           ^
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:70:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->update(elapsed_time);
+  ^
+../arkclone.cpp:70:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:75:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->draw(graphics);
+  ^
+make: *** [arkclone.o] Error 1
+18:52:43 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:26:62: error: conversion from ‘Paddle*’ to non-scalar type ‘Paddle’ requested
+  Paddle paddle_ = new Paddle("graphics/player.bmp",0,0,102,22);
+                                                              ^
+../arkclone.cpp:48:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->stopMoving();
+           ^
+../arkclone.cpp:50:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->startMovingLeft();
+           ^
+../arkclone.cpp:52:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->startMovingRight();
+           ^
+../arkclone.cpp:54:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->stopMoving();
+           ^
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:70:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->update(elapsed_time);
+  ^
+../arkclone.cpp:70:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:75:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->draw(graphics);
+  ^
+make: *** [arkclone.o] Error 1
+18:53:13 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:26:61: error: conversion from ‘Paddle*’ to non-scalar type ‘Paddle’ requested
+  Paddle paddle = new Paddle("graphics/player.bmp",0,0,102,22);
+                                                             ^
+../arkclone.cpp:48:4: error: ‘paddle_’ was not declared in this scope
+    paddle_->stopMoving();
+    ^
+../arkclone.cpp:50:4: error: ‘paddle_’ was not declared in this scope
+    paddle_->startMovingLeft();
+    ^
+../arkclone.cpp:52:4: error: ‘paddle_’ was not declared in this scope
+    paddle_->startMovingRight();
+    ^
+../arkclone.cpp:54:4: error: ‘paddle_’ was not declared in this scope
+    paddle_->stopMoving();
+    ^
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:70:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->update(elapsed_time);
+  ^
+../arkclone.cpp:70:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:75:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->draw(graphics);
+  ^
+make: *** [arkclone.o] Error 1
+18:53:19 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:26:62: error: conversion from ‘Paddle*’ to non-scalar type ‘Paddle’ requested
+  Paddle paddle_ = new Paddle("graphics/player.bmp",0,0,102,22);
+                                                              ^
+../arkclone.cpp:48:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->stopMoving();
+           ^
+../arkclone.cpp:50:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->startMovingLeft();
+           ^
+../arkclone.cpp:52:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->startMovingRight();
+           ^
+../arkclone.cpp:54:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->stopMoving();
+           ^
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:70:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->update(elapsed_time);
+  ^
+../arkclone.cpp:70:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:75:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->draw(graphics);
+  ^
+make: *** [arkclone.o] Error 1
+18:55:06 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:26:63: error: invalid initialization of non-const reference of type ‘Paddle&’ from an rvalue of type ‘Paddle*’
+  Paddle &paddle_ = new Paddle("graphics/player.bmp",0,0,102,22);
+                                                               ^
+../arkclone.cpp:48:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->stopMoving();
+           ^
+../arkclone.cpp:50:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->startMovingLeft();
+           ^
+../arkclone.cpp:52:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->startMovingRight();
+           ^
+../arkclone.cpp:54:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->stopMoving();
+           ^
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:70:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->update(elapsed_time);
+  ^
+../arkclone.cpp:70:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:75:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->draw(graphics);
+  ^
+make: *** [arkclone.o] Error 1
+18:56:42 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:26:9: error: no matching function for call to ‘Paddle::Paddle()’
+  Paddle paddle_;
+         ^
+../arkclone.cpp:26:9: note: candidates are:
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:11:2: note: Paddle::Paddle(const string&, int, int, int, int)
+  Paddle(
+  ^
+../paddle.h:11:2: note:   candidate expects 5 arguments, 0 provided
+../paddle.h:9:7: note: Paddle::Paddle(const Paddle&)
+ class Paddle {
+       ^
+../paddle.h:9:7: note:   candidate expects 1 argument, 0 provided
+../arkclone.cpp:27:10: error: no match for ‘operator=’ (operand types are ‘Paddle’ and ‘Paddle*’)
+  paddle_ = new Paddle("graphics/player.bmp",0,0,102,22);
+          ^
+../arkclone.cpp:27:10: note: candidate is:
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:9:7: note: Paddle& Paddle::operator=(const Paddle&)
+ class Paddle {
+       ^
+../paddle.h:9:7: note:   no known conversion for argument 1 from ‘Paddle*’ to ‘const Paddle&’
+../arkclone.cpp:49:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->stopMoving();
+           ^
+../arkclone.cpp:51:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->startMovingLeft();
+           ^
+../arkclone.cpp:53:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->startMovingRight();
+           ^
+../arkclone.cpp:55:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->stopMoving();
+           ^
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:71:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->update(elapsed_time);
+  ^
+../arkclone.cpp:71:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:76:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->draw(graphics);
+  ^
+make: *** [arkclone.o] Error 1
+18:57:15 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:27:10: error: no match for ‘operator=’ (operand types are ‘Paddle’ and ‘Paddle*’)
+  paddle_ = new Paddle("graphics/player.bmp",0,0,102,22);
+          ^
+../arkclone.cpp:27:10: note: candidate is:
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:9:7: note: Paddle& Paddle::operator=(const Paddle&)
+ class Paddle {
+       ^
+../paddle.h:9:7: note:   no known conversion for argument 1 from ‘Paddle*’ to ‘const Paddle&’
+../arkclone.cpp:49:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->stopMoving();
+           ^
+../arkclone.cpp:51:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->startMovingLeft();
+           ^
+../arkclone.cpp:53:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->startMovingRight();
+           ^
+../arkclone.cpp:55:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->stopMoving();
+           ^
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:71:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->update(elapsed_time);
+  ^
+../arkclone.cpp:71:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:76:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->draw(graphics);
+  ^
+make: *** [arkclone.o] Error 1
+18:57:19 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:49:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->stopMoving();
+           ^
+../arkclone.cpp:51:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->startMovingLeft();
+           ^
+../arkclone.cpp:53:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->startMovingRight();
+           ^
+../arkclone.cpp:55:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->stopMoving();
+           ^
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:71:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->update(elapsed_time);
+  ^
+../arkclone.cpp:71:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:76:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->draw(graphics);
+  ^
+make: *** [arkclone.o] Error 1
+18:57:35 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:26:62: error: conversion from ‘Paddle*’ to non-scalar type ‘Paddle’ requested
+  Paddle paddle_ = new Paddle("graphics/player.bmp",0,0,102,22);
+                                                              ^
+../arkclone.cpp:49:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->stopMoving();
+           ^
+../arkclone.cpp:51:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->startMovingLeft();
+           ^
+../arkclone.cpp:53:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->startMovingRight();
+           ^
+../arkclone.cpp:55:11: error: base operand of ‘->’ has non-pointer type ‘Paddle’
+    paddle_->stopMoving();
+           ^
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:71:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->update(elapsed_time);
+  ^
+../arkclone.cpp:71:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:76:2: error: ‘paddle_’ was not declared in this scope
+  paddle_->draw(graphics);
+  ^
+make: *** [arkclone.o] Error 1
+19:34:51 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::eventLoop()’:
+../arkclone.cpp:49:13: error: ‘class Paddle’ has no member named ‘stopMoving’
+    paddle_->stopMoving();
+             ^
+../arkclone.cpp:51:13: error: ‘class Paddle’ has no member named ‘startMovingLeft’
+    paddle_->startMovingLeft();
+             ^
+../arkclone.cpp:53:13: error: ‘class Paddle’ has no member named ‘startMovingRight’
+    paddle_->startMovingRight();
+             ^
+../arkclone.cpp:55:13: error: ‘class Paddle’ has no member named ‘stopMoving’
+    paddle_->stopMoving();
+             ^
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:71:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:76:24: error: no matching function for call to ‘Paddle::draw(Graphics&)’
+  paddle_->draw(graphics);
+                        ^
+../arkclone.cpp:76:24: note: candidate is:
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:18:7: note: void Paddle::draw(Graphics&, int, int)
+  void draw(Graphics& graphics, int x, int y);
+       ^
+../paddle.h:18:7: note:   candidate expects 3 arguments, 1 provided
+make: *** [arkclone.o] Error 1
+19:36:14 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+In file included from ../arkclone.cpp:4:0:
+../paddle.h: In member function ‘void Arkclone::eventLoop()’:
+../paddle.h:27:7: error: ‘void Paddle::stopMoving()’ is private
+  void stopMoving();
+       ^
+../arkclone.cpp:49:24: error: within this context
+    paddle_->stopMoving();
+                        ^
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:25:7: error: ‘void Paddle::startMovingLeft()’ is private
+  void startMovingLeft();
+       ^
+../arkclone.cpp:51:29: error: within this context
+    paddle_->startMovingLeft();
+                             ^
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:26:7: error: ‘void Paddle::startMovingRight()’ is private
+  void startMovingRight();
+       ^
+../arkclone.cpp:53:30: error: within this context
+    paddle_->startMovingRight();
+                              ^
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:27:7: error: ‘void Paddle::stopMoving()’ is private
+  void stopMoving();
+       ^
+../arkclone.cpp:55:24: error: within this context
+    paddle_->stopMoving();
+                        ^
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:71:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:76:24: error: no matching function for call to ‘Paddle::draw(Graphics&)’
+  paddle_->draw(graphics);
+                        ^
+../arkclone.cpp:76:24: note: candidate is:
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:18:7: note: void Paddle::draw(Graphics&, int, int)
+  void draw(Graphics& graphics, int x, int y);
+       ^
+../paddle.h:18:7: note:   candidate expects 3 arguments, 1 provided
+make: *** [arkclone.o] Error 1
+19:37:07 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+In file included from ../arkclone.cpp:4:0:
+../paddle.h: In member function ‘void Arkclone::eventLoop()’:
+../paddle.h:27:7: error: ‘void Paddle::stopMoving()’ is private
+  void stopMoving();
+       ^
+../arkclone.cpp:49:24: error: within this context
+    paddle_->stopMoving();
+                        ^
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:25:7: error: ‘void Paddle::startMovingLeft()’ is private
+  void startMovingLeft();
+       ^
+../arkclone.cpp:51:29: error: within this context
+    paddle_->startMovingLeft();
+                             ^
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:26:7: error: ‘void Paddle::startMovingRight()’ is private
+  void startMovingRight();
+       ^
+../arkclone.cpp:53:30: error: within this context
+    paddle_->startMovingRight();
+                              ^
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:27:7: error: ‘void Paddle::stopMoving()’ is private
+  void stopMoving();
+       ^
+../arkclone.cpp:55:24: error: within this context
+    paddle_->stopMoving();
+                        ^
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:71:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:76:24: error: no matching function for call to ‘Paddle::draw(Graphics&)’
+  paddle_->draw(graphics);
+                        ^
+../arkclone.cpp:76:24: note: candidate is:
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:18:7: note: void Paddle::draw(Graphics&, int, int)
+  void draw(Graphics& graphics, int x, int y);
+       ^
+../paddle.h:18:7: note:   candidate expects 3 arguments, 1 provided
+make: *** [arkclone.o] Error 1
+19:37:35 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+In file included from ../arkclone.cpp:4:0:
+../paddle.h: In member function ‘void Arkclone::eventLoop()’:
+../paddle.h:27:7: error: ‘void Paddle::stopMoving()’ is private
+  void stopMoving();
+       ^
+../arkclone.cpp:49:24: error: within this context
+    paddle_->stopMoving();
+                        ^
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:25:7: error: ‘void Paddle::startMovingLeft()’ is private
+  void startMovingLeft();
+       ^
+../arkclone.cpp:51:29: error: within this context
+    paddle_->startMovingLeft();
+                             ^
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:26:7: error: ‘void Paddle::startMovingRight()’ is private
+  void startMovingRight();
+       ^
+../arkclone.cpp:53:30: error: within this context
+    paddle_->startMovingRight();
+                              ^
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:27:7: error: ‘void Paddle::stopMoving()’ is private
+  void stopMoving();
+       ^
+../arkclone.cpp:55:24: error: within this context
+    paddle_->stopMoving();
+                        ^
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:71:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:76:24: error: no matching function for call to ‘Paddle::draw(Graphics&)’
+  paddle_->draw(graphics);
+                        ^
+../arkclone.cpp:76:24: note: candidate is:
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:18:7: note: void Paddle::draw(Graphics&, int, int)
+  void draw(Graphics& graphics, int x, int y);
+       ^
+../paddle.h:18:7: note:   candidate expects 3 arguments, 1 provided
+make: *** [arkclone.o] Error 1
+19:38:28 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:71:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:76:24: error: no matching function for call to ‘Paddle::draw(Graphics&)’
+  paddle_->draw(graphics);
+                        ^
+../arkclone.cpp:76:24: note: candidate is:
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:18:7: note: void Paddle::draw(Graphics&, int, int)
+  void draw(Graphics& graphics, int x, int y);
+       ^
+../paddle.h:18:7: note:   candidate expects 3 arguments, 1 provided
+make: *** [arkclone.o] Error 1
+19:40:19 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:71:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:76:24: error: no matching function for call to ‘Paddle::draw(Graphics&)’
+  paddle_->draw(graphics);
+                        ^
+../arkclone.cpp:76:24: note: candidate is:
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:18:7: note: void Paddle::draw(Graphics&, int, int)
+  void draw(Graphics& graphics, int x, int y);
+       ^
+../paddle.h:18:7: note:   candidate expects 3 arguments, 1 provided
+make: *** [arkclone.o] Error 1
+19:40:48 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::update(int)’:
+../arkclone.cpp:71:18: error: ‘elapsed_time’ was not declared in this scope
+  paddle_->update(elapsed_time);
+                  ^
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:76:24: error: no matching function for call to ‘Paddle::draw(Graphics&)’
+  paddle_->draw(graphics);
+                        ^
+../arkclone.cpp:76:24: note: candidate is:
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:18:7: note: void Paddle::draw(Graphics&, int, int)
+  void draw(Graphics& graphics, int x, int y);
+       ^
+../paddle.h:18:7: note:   candidate expects 3 arguments, 1 provided
+make: *** [arkclone.o] Error 1
+19:41:12 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+../arkclone.cpp: In member function ‘void Arkclone::draw(Graphics&)’:
+../arkclone.cpp:76:24: error: no matching function for call to ‘Paddle::draw(Graphics&)’
+  paddle_->draw(graphics);
+                        ^
+../arkclone.cpp:76:24: note: candidate is:
+In file included from ../arkclone.cpp:4:0:
+../paddle.h:18:7: note: void Paddle::draw(Graphics&, int, int)
+  void draw(Graphics& graphics, int x, int y);
+       ^
+../paddle.h:18:7: note:   candidate expects 3 arguments, 1 provided
+make: *** [arkclone.o] Error 1
+19:41:32 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building file: ../input.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"input.d" -MT"input.d" -o "input.o" "../input.cpp"
+Finished building: ../input.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building file: ../paddle.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"paddle.d" -MT"paddle.d" -o "paddle.o" "../paddle.cpp"
+Finished building: ../paddle.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:42:11 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../paddle.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"paddle.d" -MT"paddle.d" -o "paddle.o" "../paddle.cpp"
+Finished building: ../paddle.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:42:39 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../paddle.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"paddle.d" -MT"paddle.d" -o "paddle.o" "../paddle.cpp"
+Finished building: ../paddle.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:42:41 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:48:43 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:48:55 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:48:56 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:49:03 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:49:05 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:49:10 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:49:12 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:49:28 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:49:30 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:49:43 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:50:06 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:50:08 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:50:16 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:50:18 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:50:29 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:50:31 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:50:38 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:50:39 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:50:48 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:50:50 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:51:05 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:51:08 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:51:22 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:51:24 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:51:29 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:51:31 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:51:35 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:51:37 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:51:44 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:51:45 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:51:53 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:51:54 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:52:00 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 
+19:52:02 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:52:04 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+make: Nothing to be done for `all'.
+19:52:12 **** Incremental Build of configuration Debug for project ArkClone ****
+make all 
+Building file: ../arkclone.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"arkclone.d" -MT"arkclone.d" -o "arkclone.o" "../arkclone.cpp"
+Finished building: ../arkclone.cpp
+ 
+Building target: ArkClone
+Invoking: Cross G++ Linker
+g++  -o "ArkClone"  ./arkclone.o ./graphics.o ./input.o ./main.o ./paddle.o   -lSDL -lSDL_image
+Finished building target: ArkClone
+ 

@@ -1,0 +1,19 @@
+#ifndef ARKCLONE_H_
+#define ARKCLONE_H_
+
+class Graphics;
+class Paddle;
+
+class Arkclone {
+public:
+	Arkclone();
+	~Arkclone();
+
+private:
+	void eventLoop();
+	void update(int elapsed_time_ms);
+	void draw(Graphics& graphics);
+
+};
+
+#endif /* ARKCLONE_H_ */

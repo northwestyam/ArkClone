@@ -1,0 +1,20 @@
+#include "graphics.h"
+
+namespace {
+	const int kScreenWidth = 640;
+	const int kScreenHeight = 480;
+	const int kBitsPerPixel = 32;
+}
+
+Graphics::Graphics() {
+	screen_ = SDL_SetVideoMode(
+			kScreenWidth,
+			kScreenHeight,
+			kBitsPerPixel,
+			SDL_SWSURFACE);
+}
+
+Graphics::~Graphics() {
+
+}
+

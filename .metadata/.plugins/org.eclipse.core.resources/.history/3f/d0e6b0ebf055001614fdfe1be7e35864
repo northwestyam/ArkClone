@@ -1,0 +1,17 @@
+/*
+ * graphics.h
+ *
+ *  Created on: Jul 29, 2016
+ *      Author: johjoh
+ */
+
+#ifndef GRAPHICS_H_
+#define GRAPHICS_H_
+
+class graphics {
+public:
+	graphics();
+	virtual ~graphics();
+};
+
+#endif /* GRAPHICS_H_ */
