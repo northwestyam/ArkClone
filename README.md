@@ -12,4 +12,6 @@ I need to rethink how I organized my code. My usage of global variables is not v
 
 ## In the next version!
 I plan to update my programmer art to nicer programmer art and restructure my code in a more object-oriented way.
->>>>>>> f8367ec1234ecbd453ef79fe387a0437f56f77d3
+
+## Version History
+* 7/29/2016: I re-did the entire architecture of the game, focusing on making the the game elements classes.
