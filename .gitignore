@@ -2,6 +2,7 @@
 Debug/
 audio/
 graphics/
+.metadata/
 =======
 .cproject
 .project
